@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    title Movie Search
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="styles/styles.css")
+    link(href="https://fonts.googleapis.com/css?family=Roboto", rel="stylesheet")
+  body
+    p
+      a(href="http://localhost:3000/movieID", style="color: blue; text-decoration: underline;") Add Movies to Watchlist with ID's
+    p
+      a(href="http://localhost:3000/watchlist", style="color: blue; text-decoration: underline;") Go to Watchlist
+
+    .container
+      .wrapper
+        | Enter Movie Name: 
+        input(type="text", id="movie")
+        button(id="submit_movie_button", style="margin-bottom: 50px;") Submit
+
+      #movieName
+
+    script(src="js/movieScript.js")

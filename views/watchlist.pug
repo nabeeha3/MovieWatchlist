@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title Watchlist
+  body
+    include watchlistHeader
+    each row in rows
+      div(style="display: flex; justify-content: space-between; margin-bottom: 10px;")
+        span Title: #{row.title}
+        span Id: #{row.id}
+    include footer
